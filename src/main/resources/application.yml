@@ -1,0 +1,35 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update#      naming:#        physical-strategy: 
+
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/content2
+    username: postgres
+    password: jaga
+#    url: jdbc:postgresql://usqaappdb1.cs.com:5432/content
+#    username: postgre
+#    password: Conch@123
+    driverClassName: org.postgresql.Driver
+app:
+  documentUrl: https://demoapps.arkatiss.com/CMS/getDocById?docId=
+  mail:
+    host: smtp.gmail.com
+    username: noreplysbts@gmail.com
+    password: abap@123
+
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true 
+    
+server:
+  port: 1507  #  servlet:#    context-path: /cms
+
+  
